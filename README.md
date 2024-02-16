@@ -54,7 +54,7 @@ cd xchain-wallet
 npm typedoc --out <path>
 ```
 
-For example, npm typedoc ``` --out src/wallet.ts src/index.ts ```
+For example, npm typedoc ``` npm typedoc --out src/wallet.ts src/index.ts ```
 
 ## **How the xchain-docs Repository Benefits Developers**
 
