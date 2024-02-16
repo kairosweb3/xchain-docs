@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <style>
+        /* Some basic styling for the sidebar */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+        }
+
+        .sidebar {
+            height: calc(100vh - 30px);
+            /* Adjust the height to leave some margin at the bottom */
+            width: 200px;
+            width: 200px;
+            background-color: #f0f0f0;
+            padding-top: 20px;
+            overflow-y: auto;
+            position: fixed;
+            left: 0;
+            top: 0;
+            margin-bottom: 20px;
+            /* Margin from the bottom */
+        }
+
+        .sidebar a {
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+        }
+
+        .content {
+            margin-left: 200px;
+            /* Adjust according to the sidebar width */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <!-- Add more links as needed -->
+        <!-- Repeat the pattern for all 33 files -->
+        <a href="xchain-arbitrum/docs/index.html">xchain-arbitrum</a>
+        <a href="xchain-avax/docs/index.html">xchain-avax</a>
+        <a href="xchain-binance/docs/index.html">xchain-binance</a>
+        <a href="xchain-bitcoin/docs/index.html">xchain-bitcoin</a>
+        <a href="xchain-bitcoincash/docs/index.html">xchain-bitcoincash</a>
+        <a href="xchain-bsc/docs/index.html">xchain-bsc</a>
+        <a href="xchain-client/docs/index.html">xchain-client</a>
+        <a href="xchain-cosmos/docs/index.html">xchain-cosmos</a>
+        <a href="xchain-cosmos-sdk/docs/index.html">xchain-cosmos-sdk</a>
+        <a href="xchain-crypto/docs/index.html">xchain-crypto</a>
+        <a href="xchain-dash/docs/index.html">xchain-dash</a>
+        <a href="xchain-doge/docs/index.html">xchain-doge</a>
+        <a href="xchain-ethereum/docs/index.html">xchain-ethereum</a>
+        <a href="xchain-evm/docs/index.html">xchain-evm</a>
+        <a href="xchain-evm-providers/docs/index.html">xchain-evm-providers</a>
+        <a href="xchain-litecoin/docs/index.html">xchain-litecoin</a>
+        <a href="xchain-mayachain/docs/index.html">xchain-mayachain</a>
+        <a href="xchain-mayachain-amm/docs/index.html">xchain-mayachain-amm</a>
+        <a href="xchain-mayachain-query/docs/index.html">xchain-mayachain-query</a>
+        <a href="xchain-mayamidgard/docs/index.html">xchain-mayamidgard</a>
+        <a href="xchain-mayamidgard-query/docs/index.html">xchain-mayamidgard-query</a>
+        <a href="xchain-mayanode/docs/index.html">xchain-mayanode</a>
+        <a href="xchain-midgard/docs/index.html">xchain-midgard</a>
+        <a href="xchain-midgard-query/docs/index.html">xchain-midgard-query</a>
+        <a href="xchain-thorchain/docs/index.html">xchain-thorchain</a>
+        <a href="xchain-thorchain-amm/docs/index.html">xchain-thorchain-amm</a>
+        <a href="xchain-thorchain-query/docs/index.html">xchain-thorchain-query</a>
+        <a href="xchain-thornode/docs/index.html">xchain-thornode</a>
+        <a href="xchain-util/docs/index.html">xchain-util</a>
+        <a href="xchain-utxo/docs/index.html">xchain-utxo</a>
+        <a href="xchain-utxo-providers/docs/index.html">xchain-utxo-providers</a>
+        <a href="xchain-wallet/docs/index.html">xchain-wallet</a>
+    </div>
+
+    <div class="content">
+        <!-- Content goes here -->
+        <!-- This is where your HTML files will be rendered -->
+        <h1 id="xchainjs-documentation-repository">XChainJS Typedoc Documentation Repository</h1>
+        <p>Welcome to the XChainJS Typedoc Documentation Repository! </p>
+        <p>This repository hosts documentation for XChainJS, a library offering a unified interface across multiple
+            blockchains. It&#39;s designed for seamless integration into wallets and other applications, providing
+            simplicity and speed.</p>
+        <h2 id="setup">Setup</h2>
+        <p>To access the documentation locally, follow these steps:</p>
+        <ol>
+            <li>
+                <p>Clone the repository to your machine:</p>
+                <pre><code class="lang-bash">git <span class="hljs-keyword">clone</span> <span class="hljs-title">https</span>://github.com/kairosweb3/xchain-docs
+                </code></pre>
+            </li>
+            <li>
+                <p>Navigate to the cloned directory:</p>
+                <pre><code class="lang-bash"><span class="hljs-built_in">cd</span> xchain-docs
+                </code></pre>
+            </li>
+            <li>
+                <p>Install dependencies:</p>
+                <pre><code class="lang-bash">npm <span class="hljs-keyword">install</span>
+                </code></pre>
+            </li>
+            <li>
+                <p>Install Nodejs dependecies to setup <code>http-server</code> in this repository.</p>
+                <pre><code class="lang-bash">   npm <span class="hljs-selector-tag">i</span> http-server
+                </code></pre>
+            </li>
+        </ol>
+        <h2 id="running-the-documentation-server">Running the Documentation Server</h2>
+        <p>To start a local server serving the documentation:</p>
+        <ol>
+            <li>
+                <p>Navigate to the repository&#39;s root directory.</p>
+            </li>
+            <li>
+                <p>Launch the Node.js server:</p>
+                <pre><code class="lang-bash">http-<span class="hljs-keyword">server</span>
+                </code></pre>
+                <p>This will initiate a server at <code>http://localhost:3000</code>.</p>
+            </li>
+        </ol>
+        <h2 id="accessing-documentation">Accessing Documentation</h2>
+        <ul>
+            <li>Once the server is up, access the documentation by opening <code>http://localhost:3000</code> in your
+                web browser. There, you&#39;ll find detailed documentation for various packages.</li>
+            <li>To access the documentation file for each particular package, navigate to the <code>docs</code> folder
+                on the localhost URL.</li>
+            <li>Each package is represented by HTML files generated by Typedoc.</li>
+        </ul>
+        <h2 id="how-this-repository-benefits-developers">How this Repository Benefits Developers</h2>
+        <p>XChainJS documentation plays a crucial role for developers in several ways:</p>
+        <ol>
+            <li>
+                <p><strong>Clarity and Guidance</strong>: It offers clear, well-structured documentation on utilizing
+                    XChainJS for blockchain integration, facilitating easier development and integration processes.</p>
+            </li>
+            <li>
+                <p><strong>Reference Material</strong>: Developers can refer to this repository to understand the
+                    functionalities and APIs provided by XChainJS, aiding in the development of wallets and other
+                    blockchain-related applications.</p>
+            </li>
+            <li>
+                <p><strong>Troubleshooting and Support</strong>: Detailed documentation assists developers in
+                    troubleshooting issues and seeking support, thereby expediting the development lifecycle and
+                    improving overall user experience.</p>
+            </li>
+        </ol>
+        <h2 id="contribution">Contribution</h2>
+        <p>We welcome contributions to enhance the documentation. If you spot errors or have suggestions for
+            improvement, please don&#39;t hesitate to open an issue or submit a pull request.</p>
+        <h2 id="license">License</h2>
+        <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
+
+    </div>
+</body>
+
+</html>
