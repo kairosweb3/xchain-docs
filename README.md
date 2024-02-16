@@ -13,13 +13,15 @@ Follow these steps to access the documentation locally:
 
 **Step 1:** Clone the repository to your machine:
 
-| git clone https://github.com/kairosweb3/xchain-docs |
-| --- |
+```
+git clone https://github.com/kairosweb3/xchain-docs
+```
 
 **Step 2:** Navigate to the cloned directory:
 
-| cd xchain-docs |
-| --- |
+```
+cd xchain-docs
+```
 
 ## **Accessing Documentation:**
 
@@ -33,24 +35,26 @@ To render the documentation of all the packages on your browser follow these ste
 
 **Step 1:** Clone the repository to your machine:
 
-| git clone https://github.com/xchainjs/xchainjs-lib.git |
-| --- |
+```
+git clone https://github.com/xchainjs/xchainjs-lib.git
+```
 
 **Step 2:** Navigate to the cloned directory:
 
-| cd xchain-lib |
-| --- |
+```
+cd xchain-lib
+```
 
 **Step 3:** Open any of the packages directory in the terminal. For example, xchain-lib/xchain-wallet
 
 **Note:** Make sure you have installed the typedoc npm package in your local machine globally. You can go through the [typedoc](https://typedoc.org/guides/installation/) documentation for more detail.
 
-| cd xchain-wallet |
+```
+cd xchain-wallet
+npm typedoc --out <path>
+```
 
- npm typedoc --out \<path\> |
-| --- |
-
-For example, npm typedoc --out src/wallet.ts src/index.ts
+For example, npm typedoc ``` --out src/wallet.ts src/index.ts ```
 
 ## **How the xchain-docs Repository Benefits Developers**
 
