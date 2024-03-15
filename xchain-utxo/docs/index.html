@@ -1,0 +1,87 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@xchainjs/xchain-utxo</title><meta name="description" content="Documentation for @xchainjs/xchain-utxo"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@xchainjs/xchain-utxo</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h2>@xchainjs/xchain-utxo</h2></div><div class="tsd-panel tsd-typography"><p align="center">
+  <a href="https://xchainjs.org/" target="_blank" rel="noopener noreferrer"><img width="400" height="300" src="https://avatars.githubusercontent.com/u/73146062?s=200&v=4" alt="xchainjs logo"></a>
+</p>
+<h1 align="center">
+    XChainJS - xchainjs Library 
+</h1>
+
+<p><em>:star: Developed / Developing by <a href="https://xchainjs.org/">xchainjs</a></em></p>
+<p>XChainJS is a library with a common interface for multiple blockchains, built for simple and fast integration for wallets and more.</p>
+<a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p><a><img src="https://img.shields.io/badge/MIT-xchainjs-green" alt="License"></a></p>
+<p>Telegram group: <a href="https://t.me/xchainjs">https://t.me/xchainjs</a> <br>Homepage: <a href="https://xchainjs.org">https://xchainjs.org</a> <br>Live Examples: <a href="https://dev.thorchain.org/thorchain-dev/xchainjs-integration-guide/query-package">https://dev.thorchain.org/thorchain-dev/xchainjs-integration-guide/query-package</a> <br>Docs: <a href="http://docs.xchainjs.org/overview">http://docs.xchainjs.org/overview</a> <br>Integration guide: <a href="https://dev.thorchain.org/thorchain-dev/xchainjs-integration-guide/overview">https://dev.thorchain.org/thorchain-dev/xchainjs-integration-guide/overview</a></p>
+<a id="md:interface" class="tsd-anchor"></a><h2><a href="#md:interface">Interface</a></h2><p>The interface is <a href="https://github.com/xchainjs/xchainjs-lib/blob/master/packages/xchain-client/README.md">defined here.</a></p>
+<a id="md:common-interface" class="tsd-anchor"></a><h3><a href="#md:common-interface">Common Interface</a></h3><p>A single common interface:</p>
+<ol>
+<li>Initialise with a valid BIP39 phrase and specified network (testnet/mainnet)</li>
+<li>Get the address, with support for BIP44 path derivations (default is Index 0)</li>
+<li>Get the balance (UTXO or account-based)</li>
+<li>Get transaction history for that address</li>
+<li>Make a simple transfer</li>
+<li>Get blockchain fee information (standard, fast, fastest)</li>
+</ol>
+<a id="md:packages---thorchain" class="tsd-anchor"></a><h3><a href="#md:packages---thorchain">Packages - Thorchain</a></h3><ul>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-avax"><code>xchain-avax</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-binance"><code>xchain-binance</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-bitcoin"><code>xchain-bitcoin</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-bitcoincash"><code>xchain-bitcoincash</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-bsc"><code>xchain-bsc</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-client"><code>xchain-client</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-cosmos"><code>xchain-cosmos</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-crypto"><code>xchain-crypto</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-doge"><code>xchain-doge</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-ethereum"><code>xchain-ethereum</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-evm"><code>xchain-evm</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-litecoin"><code>xchain-litecoin</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-midgard"><code>xchain-midgard</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thorchain"><code>xchain-thorchain</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thorchain-amm"><code>xchain-thorchain-amm</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thorchain-query"><code>xchain-thorchain-query</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-thornode"><code>xchain-thornode</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-util"><code>xchain-util</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-utxo-providers"><code>xchain-utxo-providers</code></a></li>
+</ul>
+<a id="md:packages---mayachain" class="tsd-anchor"></a><h3><a href="#md:packages---mayachain">Packages - Mayachain</a></h3><ul>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-mayanode"><code>xchain-mayanode</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-mayachain"><code>xchain-mayachain</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-dash"><code>xchain-dash</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/packages/xchain-mayachain-query"><code>xchain-mayachain-query</code></a></li>
+</ul>
+<a id="md:working-examples" class="tsd-anchor"></a><h3><a href="#md:working-examples">Working Examples</a></h3><ul>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/examples/do-swap"><code>doSwap(), doSend()</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/examples/liquidity"><code>addLiquidity()</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/examples/estimate-swap"><code>estimateSwap()</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/examples/check-tx"><code>checkTx()</code></a></li>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/examples/loans"><code>loans()</code></a></li>
+</ul>
+<a id="md:tools--txjammer" class="tsd-anchor"></a><h3><a href="#md:tools--txjammer">Tools / TxJammer</a></h3><ul>
+<li><a href="https://github.com/xchainjs/xchainjs-lib/tree/master/tools/txJammer"><code>Tx Jammer</code></a></li>
+</ul>
+<a id="md:advanced-features" class="tsd-anchor"></a><h2><a href="#md:advanced-features">Advanced Features</a></h2><p>For wallets that need even more flexibility (smart contract blockchains) the client can be retrieved and the wallet is then free to handle directly.</p>
+<a id="md:xchainjs-uses-following-libraries-frameworks-and-more" class="tsd-anchor"></a><h2><a href="#md:xchainjs-uses-following-libraries-frameworks-and-more">XChainJS uses following libraries, frameworks and more:</a></h2><ul>
+<li><a href="https://github.com/bitcoinjs/bitcoinjs-lib">BitcoinJS</a></li>
+<li><a href="https://github.com/binance-chain/javascript-sdk">@binance-chain/javascript-sdk</a></li>
+<li><a href="https://github.com/ethers-io/ethers.js">@ethersproject</a></li>
+<li><a href="https://github.com/cosmos-client/cosmos-client-ts">cosmos-client</a></li>
+</ul>
+<p><img src="https://github.com/thorchain/asgardex-electron/workflows/Test/badge.svg" alt="Test"></p>
+<a id="md:tests" class="tsd-anchor"></a><h2><a href="#md:tests">Tests</a></h2><p>Make sure Jest and Lerna is installed</p>
+<pre><code><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-0">add</span><span class="hl-1"> --</span><span class="hl-0">dev</span><span class="hl-1"> </span><span class="hl-0">jest</span><span class="hl-1"> </span><span class="hl-0">lerna</span>
+</code><button>Copy</button></pre>
+<p>Start with</p>
+<pre><code><span class="hl-0">yarn</span><br/><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-0">build</span>
+</code><button>Copy</button></pre>
+<a id="md:unit" class="tsd-anchor"></a><h3><a href="#md:unit"><code>unit</code></a></h3><pre><code class="language-bash"><span class="hl-2">yarn</span><span class="hl-1"> </span><span class="hl-3">test</span>
+</code><button>Copy</button></pre>
+<a id="md:integration-tests" class="tsd-anchor"></a><h2><a href="#md:integration-tests">Integration Tests</a></h2><p>There are a suite of integration test which work against testnet. You will need to specify a phrase which controls testnet coins</p>
+<pre><code class="language-bash"><span class="hl-4">export</span><span class="hl-1"> </span><span class="hl-0">PHRASE</span><span class="hl-1">=</span><span class="hl-3">&quot;secret phrase here&quot;</span><br/><span class="hl-2">yarn</span><span class="hl-1"> </span><span class="hl-3">e2e</span>
+</code><button>Copy</button></pre>
+<a id="md:development" class="tsd-anchor"></a><h2><a href="#md:development">Development</a></h2><p><code>lerna bootstrap</code></p>
+<a id="md:releasing" class="tsd-anchor"></a><h2><a href="#md:releasing">Releasing</a></h2><p>To test the publish via a dryrun:</p>
+<pre><code><span class="hl-5">NPM_USERNAME</span><span class="hl-1">=</span><span class="hl-3">&quot;test123&quot;</span><span class="hl-1"> </span><span class="hl-5">NPM_PASSWORD</span><span class="hl-1">=</span><span class="hl-3">&quot;test123&quot;</span><span class="hl-1"> </span><span class="hl-5">NPM_EMAIL</span><span class="hl-1">=</span><span class="hl-3">&quot;test123@test123.com&quot;</span><span class="hl-1"> ./</span><span class="hl-0">dryrun_publish</span><span class="hl-1">.</span><span class="hl-0">sh</span><br/>
+</code><button>Copy</button></pre>
+<p>To publish:</p>
+<pre><code><span class="hl-5">NPM_USERNAME</span><span class="hl-1">=</span><span class="hl-3">&quot;TODO Use real npm username&quot;</span><span class="hl-1"> </span><span class="hl-5">NPM_PASSWORD</span><span class="hl-1">=</span><span class="hl-3">&quot;TODO Use real npm password&quot;</span><span class="hl-1"> </span><span class="hl-5">NPM_EMAIL</span><span class="hl-1">=</span><span class="hl-3">&quot;TODO Use real npm email&quot;</span><span class="hl-1"> ./</span><span class="hl-0">publish</span><span class="hl-1">.</span><span class="hl-0">sh</span><br/>
+</code><button>Copy</button></pre>
+<a id="md:contributing" class="tsd-anchor"></a><h2><a href="#md:contributing">Contributing</a></h2><p>Please ask in the telegram group to be added as a contributor.</p>
+<a id="md:bug-reports" class="tsd-anchor"></a><h2><a href="#md:bug-reports">Bug Reports</a></h2><p>Please submit an issue and flag in the telegram group.</p>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-index-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><h4 class="uppercase">Member Visibility</h4><form><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div><div class="tsd-theme-toggle"><h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:license"><span>License</span></a><a href="#md:interface"><span>Interface</span></a><ul><li><a href="#md:common-interface"><span>Common <wbr/>Interface</span></a></li><li><a href="#md:packages---thorchain"><span>Packages -<wbr/> <wbr/>Thorchain</span></a></li><li><a href="#md:packages---mayachain"><span>Packages -<wbr/> <wbr/>Mayachain</span></a></li><li><a href="#md:working-examples"><span>Working <wbr/>Examples</span></a></li><li><a href="#md:tools--txjammer"><span>Tools / <wbr/>Tx<wbr/>Jammer</span></a></li></ul><a href="#md:advanced-features"><span>Advanced <wbr/>Features</span></a><a href="#md:xchainjs-uses-following-libraries-frameworks-and-more"><span>XChainJS uses following libraries, frameworks and more:</span></a><a href="#md:tests"><span>Tests</span></a><ul><li><a href="#md:unit"><span>unit</span></a></li></ul><a href="#md:integration-tests"><span>Integration <wbr/>Tests</span></a><a href="#md:development"><span>Development</span></a><a href="#md:releasing"><span>Releasing</span></a><a href="#md:contributing"><span>Contributing</span></a><a href="#md:bug-reports"><span>Bug <wbr/>Reports</span></a></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>@xchainjs/xchain-utxo</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><div class="tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div></body></html>

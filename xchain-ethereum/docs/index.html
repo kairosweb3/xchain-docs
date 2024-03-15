@@ -1,0 +1,64 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>@xchainjs/xchain-ethereum</title><meta name="description" content="Documentation for @xchainjs/xchain-ethereum"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">@xchainjs/xchain-ethereum</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h2>@xchainjs/xchain-ethereum</h2></div><div class="tsd-panel tsd-typography"><a id="md:xchainjsxchain-ethereum" class="tsd-anchor"></a><h1><a href="#md:xchainjsxchain-ethereum"><code>@xchainjs/xchain-ethereum</code></a></h1><a id="md:modules" class="tsd-anchor"></a><h2><a href="#md:modules">Modules</a></h2><ul>
+<li><code>client</code> - Custom client for communicating with Ethereum by using <a href="https://github.com/ethers-io/ethers.js"><code>ethers</code></a></li>
+</ul>
+<a id="md:installation" class="tsd-anchor"></a><h2><a href="#md:installation">Installation</a></h2><pre><code><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-0">add</span><span class="hl-1"> @</span><span class="hl-0">xchainjs</span><span class="hl-1">/</span><span class="hl-0">xchain</span><span class="hl-1">-</span><span class="hl-0">ethereum</span>
+</code><button>Copy</button></pre>
+<p>Following peer dependencies have to be installed into your project. These are not included in <code>@xchainjs/xchain-ethereum</code>.</p>
+<pre><code><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-0">add</span><span class="hl-1"> @</span><span class="hl-0">xchainjs</span><span class="hl-1">/</span><span class="hl-0">xchain</span><span class="hl-1">-</span><span class="hl-0">client</span><span class="hl-1"> @</span><span class="hl-0">xchainjs</span><span class="hl-1">/</span><span class="hl-0">xchain</span><span class="hl-1">-</span><span class="hl-0">crypto</span><span class="hl-1"> @</span><span class="hl-0">xchainjs</span><span class="hl-1">/</span><span class="hl-0">xchain</span><span class="hl-1">-</span><span class="hl-0">util</span><span class="hl-1"> </span><span class="hl-0">axios</span><span class="hl-1"> </span><span class="hl-0">ethers</span>
+</code><button>Copy</button></pre>
+<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#md:documentation">Documentation</a></h2><a id="md:xchain-ethereum" class="tsd-anchor"></a><h3><a href="#md:xchain-ethereum"><a href="http://docs.xchainjs.org/xchain-client/xchain-ethereum/"><code>xchain ethereum</code></a></a></h3><p><a href="http://docs.xchainjs.org/xchain-client/xchain-ethereum/how-it-works.html"><code>How xchain-ethereum works</code></a><br><a href="http://docs.xchainjs.org/xchain-client/xchain-ethereum/how-to-use.html"><code>How to use xchain-ethereum</code></a></p>
+<a id="md:service-providers" class="tsd-anchor"></a><h2><a href="#md:service-providers">Service Providers</a></h2><p>This package uses the following service providers:</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Service</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ETH balances</td>
+<td>Etherscan</td>
+<td><a href="https://etherscan.io/apis#accounts">https://etherscan.io/apis#accounts</a> (module=<code>account</code>, action=<code>balance</code>)</td>
+</tr>
+<tr>
+<td>Token balances</td>
+<td>Etherscan</td>
+<td><a href="https://etherscan.io/apis#tokens">https://etherscan.io/apis#tokens</a> (module=<code>account</code>, action=<code>tokenbalance</code>)</td>
+</tr>
+<tr>
+<td>ETH transaction history</td>
+<td>Etherscan</td>
+<td><a href="https://etherscan.io/apis#accounts">https://etherscan.io/apis#accounts</a> (module=<code>account</code>, action=<code>txlistinternal</code>)</td>
+</tr>
+<tr>
+<td>Token transaction history</td>
+<td>Etherscan</td>
+<td><a href="https://etherscan.io/apis#accounts">https://etherscan.io/apis#accounts</a> (module=<code>account</code>, action=<code>tokentx</code>)</td>
+</tr>
+<tr>
+<td>Transaction fees</td>
+<td>Etherscan</td>
+<td><a href="https://etherscan.io/apis#gastracker">https://etherscan.io/apis#gastracker</a> (module=<code>gastracker</code>, action=<code>gasoracle</code>)</td>
+</tr>
+<tr>
+<td>Transaction broadcast</td>
+<td>Etherscan</td>
+<td><a href="https://sebs.github.io/etherscan-api/#eth_sendrawtransaction">https://sebs.github.io/etherscan-api/#eth_sendrawtransaction</a></td>
+</tr>
+<tr>
+<td>Explorer</td>
+<td>Etherscan</td>
+<td><a href="https://etherscan.io/">https://etherscan.io/</a></td>
+</tr>
+</tbody></table>
+<p>Etherscan API rate limits: <a href="https://info.etherscan.com/api-return-errors/">https://info.etherscan.com/api-return-errors/</a></p>
+<ul>
+<li>This package uses <code>etherjs</code> library, by default it uses several providers. (<code>https://docs.ethers.io/v5/api-keys/</code>)</li>
+</ul>
+<a id="md:enviroment-variables" class="tsd-anchor"></a><h3><a href="#md:enviroment-variables">Enviroment variables</a></h3><pre><code class="language-sh"><span class="hl-0">ETHERSCAN_API_KEY</span><span class="hl-1">=</span><span class="hl-2">{YOUR_ETHERSCAN_API_KEY}</span>
+</code><button>Copy</button></pre>
+<p>Default config can access.</p>
+<pre><code class="language-sh"><span class="hl-3">process.env.ETHERSCAN_API_KEY</span>
+</code><button>Copy</button></pre>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-index-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><h4 class="uppercase">Member Visibility</h4><form><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-private" name="private"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Private</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></form></div><div class="tsd-theme-toggle"><h4 class="uppercase">Theme</h4><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-index-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:xchainjsxchain-ethereum"><span>@xchainjs/xchain-<wbr/>ethereum</span></a><ul><li><a href="#md:modules"><span>Modules</span></a></li><li><a href="#md:installation"><span>Installation</span></a></li><li><a href="#md:documentation"><span>Documentation</span></a></li><li><ul><li><a href="#md:xchain-ethereum"><span>xchain ethereum</span></a></li></ul></li><li><a href="#md:service-providers"><span>Service <wbr/>Providers</span></a></li><li><ul><li><a href="#md:enviroment-variables"><span>Enviroment variables</span></a></li></ul></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>@xchainjs/xchain-ethereum</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><div class="tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div></body></html>
