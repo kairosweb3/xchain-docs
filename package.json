@@ -1,0 +1,12 @@
+{
+  "name": "xchain-docs",
+  "version": "1.0.0",
+  "description": "XChainJS Typedoc Documentation Repository",
+  "main": "auto-generate.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shelljs": "^0.8.5",
+    "typedoc": "^0.25.12"
+  }
+}
